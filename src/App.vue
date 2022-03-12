@@ -2,9 +2,14 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/calculator">Calculator</router-link> |
+      <router-link to="/info">Number Information</router-link>
     </nav>
     <router-view/>
+    <div class="footer">
+      <hr/>
+      <p>Link to Github: <a href="https://github.com/sofia-i/creative-project-2">Github</a></p>
+    </div>
   </div>
 </template>
 
@@ -28,5 +33,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.footer {
+  margin: 10px;
 }
 </style>

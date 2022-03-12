@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="page-title">
+      <h1>Fun with Numbers</h1>
+    </div>
+    <img src="/images/multiplication.jpg">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
   }
 }
 </script>
+
+<style>
+* {
+  font-family: 'Ubunto Mono', monospace;
+}
+.page-title {
+  border: 1px solid #000;
+  border-radius: 20px;
+  max-width: 50%;
+  margin: 15px auto;
+}
+
+</style>
+
+<style scoped>
+img {
+  max-width: 90%;
+}
+</style>
