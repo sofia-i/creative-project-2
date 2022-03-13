@@ -28,7 +28,7 @@
         </div> <!--buttons-->
       </div> <!--table-->
     </div> <!--machine-->
-    <u>Last 5 Results:</u>
+    <h3><u>Last 5 Results:</u></h3>
     <div class="results">
       <div class="resultItem" v-for="(result, index) in resultArr" :key="index">
         <p>{{result}}</p>
@@ -218,5 +218,8 @@ export default {
 }
 .nonnumber {
   font-weight: bold;
+}
+h3 {
+  margin-bottom: 0;
 }
 </style>
