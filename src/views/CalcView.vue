@@ -31,7 +31,7 @@
     <h3><u>Last 5 Results:</u></h3>
     <div class="results">
       <div class="resultItem" v-for="(result, index) in resultArr" :key="index">
-        <p>{{result}}</p>
+        <h3>{{result}}</h3>
       </div>
     </div>
     <p>**Note: answers with decimals will be simplified to the next lowest integer when using 
@@ -211,7 +211,7 @@ export default {
   justify-content: center;
 }
 .resultItem {
-  margin: 8px;
+  margin: 3px;
 }
 .resultItem:last-of-type {
   font-weight: bold;
@@ -221,5 +221,6 @@ export default {
 }
 h3 {
   margin-bottom: 0;
+  padding: 0;
 }
 </style>
